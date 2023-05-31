@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,900;1,300&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+height:100vh;
+background-image:url('/images/header.png');
+position:relative;
+background-size: 100%;
+}
+nav{
+display:flex;
+justify-content: space-around;
+align-items: center;
+padding:40px;
+}
+.logo{
+    height:30px;
+    width:auto;
+}
+.right{
+    display:block;
+}
+    .list{
+        
+    display:flex;
+    list-style: none;
+    align-items: center;
+    gap:30px;
+    }
+    li{
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+    li:hover{
+        color:#F7B030;
+    }
+    .button{
+        background-color:#F7B030;
+        padding:10px 30px;
+        border-radius:10px;
+        color:white;
+    }
+    .button:hover{
+        background-color: white;
+        color:#F7B030;
+    }
+
+    .content{
+        padding:50px;
+        position: absolute;
+        left:10%;
+        top:25%;
+    }
+    .heading{
+        font-size: 35px;
+        width:90%;
+        font-size: 45px;
+        word-spacing:5px;
+        
+    }
+    .head{
+        color:#F7B030;
+        
+    }
+    .subheading{
+        font-size: 13px;
+        margin:20px 0;
+        color:grey;
+        width:40%;
+        line-height: 30px;
+        
+    }
+    .buttons{
+        display:flex;
+        align-items: center;
+        gap:50px;
+    }
+    .email{
+        border:none;
+        padding:10px 20px;
+        border-radius:5px;
+    }
+    .email::placeholder{
+        color:#F7B030;
+        font-weight: 700;
+    }
+    input:focus, .email:focus{
+        outline:none;
+    }
+    .story{
+        font-size: 15px;
+        padding: 10px 20px;
+        background-color: #F7B030;
+        border-radius: 5px;
+        color:white;
+        cursor: pointer;
+    }
+
+    .advantages{
+        height:120vh;
+        position:relative;
+    }
+    .heading1{
+        text-align: center;
+        padding:50px 0;
+
+    }
+    .container{
+        display:grid;
+        position:absolute;
+        top:55%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:50px;
+        column-gap: 30px;
+        place-items: center; 
+        
+    }
+    .card{
+        padding:50px;
+        height:244px;
+        width:244px;
+        text-align: center;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.21);
+        border-radius:10px;
+    }
+    .img{
+        height:50px;
+        margin-bottom: 10px;
+    }
+    .title{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .about{
+        font-size: 13px;
+        color:grey;
+    }
+    .transaction{
+        height:100vh;
+        width:100%;
+        
+    }
+    .container2{
+        padding:50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .circle{
+    width:40%;
+    }
+    .textbox{
+        width:30%;
+    }
+    .subheading2{
+        font-size: 13px;
+        color:grey;
+        line-height: 25px;
+        margin:30px 0;
+    }
+    .visit-btn{
+        display: inline-block;
+        background-color: #F7B030;
+        padding: 10px 20px;
+        color:white;
+    font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .review{
+        height:70vh;
+        width:100%;
+        background-image: url('/images/review.png');
+        background-size: cover;
+    }
+    .heading3{
+        padding:50px 100px;
+        width:45%;
+        font-size: 25px;
+    }
+    .container3{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .photo{
+        height:50px;
+    }
+    .box{
+        width:320px;
+        height:180px;
+        border-radius:10px;
+        padding:20px;
+        background-color: white;
+    }
+    .top{
+        display: flex;
+        gap:20px;
+        
+    }
+    .name{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 13px;
+        color:grey;
+    }
+    .remark{
+        font-size: 13px;
+        color:grey;
+        margin-top: 20px;
+    }
+    .transaction2{
+        height: 125vh;
+    }
+    .container4{
+        padding:50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .product{
+        height:70vh;
+        position:relative;
+
+    }
+    .scroll{
+        position:absolute;
+        transform: translate(-50%, 0);
+        margin-top:80px;
+        left:50%;
+    }
+    .container5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:70px;
+        flex-flow: wrap;
+    }
+    .procard{
+        height:250px;
+        padding:30px;
+        width:200px;
+    }
+    .proimg{
+        height:150px;
+    }
+    .proname{
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .proinfo{
+        display: flex;
+        gap:20px;
+        margin-top: 10px;
+    }
+    .discount{
+        font-size: 13px;
+    }
+    .price{
+        color:#F7B030;
+        font-size: 13px;
+    }
+    .customers{
+        height:130vh;
+        position:relative;
+
+    }
+    .customers .heading1{
+        padding:20px;
+    }
+    .subheading-1{
+        font-size: 13px;
+        color:grey;
+        text-align: center;
+    }
+    .container6{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        background-image: url('/images/Group\ 436.png');
+        height:70%;
+        width:70%;
+        padding:50px;
+        background-size: cover;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .custcard{
+        height: 250px;
+        width:200px;
+        background-color: white;
+        border-radius:10px;
+        text-align: center;
+        padding:60px 20px;
+    }
+    .numbers{
+        color:#F7B030;
+        font-size: 30px;
+    }
+    .person{
+        font-size: 15px;
+    }
+    .custcard .about{
+        font-size: 13px;
+        color:grey;
+        margin-top:20px;
+        font-weight: 500;
+    }
+    .custcard2{
+        height:300px;
+        width:220px;
+        background-color: #F7B030;
+        color:white;
+    }
+    .custcard2 .about{
+        color:white;
+    }
+    .sign-btn{
+        font-size: 15px;
+        padding:10px 20px;
+        display:inline-block;
+        background-color: white;
+        color:#F7B030;
+        border-radius:10px;
+        margin-top:20px;
+        cursor: pointer;
+    }
+    .footer{
+        height:50vh;
+        background-image: url('/images/footer.png');
+        background-size: cover;
+        width:100%;
+    }
+    .container7{
+    padding:100px 0 0 0;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .foot-heading{
+        font-size: 18px;
+        margin-bottom: 20px;
+        color:black;
+    }
+    .foot-list{
+        margin-bottom: 10px;
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+
+    }
+    .looking{
+        width:20%;
+    }
+    .social{
+        display: flex;
+        gap:10px;
+    
+    }
+    .icons{
+        height:30px;
+        cursor: pointer;
+    }
+    .foot-info{
+        margin-bottom:20px;
+    }
+
+@media only screen and (max-width: 768px) {
+
+    .right{
+        display: none;
+    }
+    .list{
+        font-size: 20px;
+        gap:50px;
+    }
+    nav{
+        align-items: center;
+    }
+    .header{
+            width:100%;
+
+    }
+    .container{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .subheading{
+        font-size: 15px;
+        margin:20px 0;
+        color:grey;
+        width:70%;
+        line-height: 30px;
+        
+    }
+    .buttons{
+        display:block;
+        align-items: center;
+        gap:50px;
+    }
+    .email{
+        border:none;
+        padding:10px 20px;
+        border-radius:5px;
+        width:100%;
+        height:70px;
+    }
+    
+    .story{
+        height:70px;
+        font-size: 15px;
+        padding: 25px 20px;
+        background-color: #F7B030;
+        border-radius: 5px;
+        color:white;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .advantages{
+        height:200vh;
+    }
+    .transaction{
+        height:120vh;
+        width:100%;
+        
+    }
+    .container2{
+        padding:70px;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .circle{
+    width:90%;
+    }
+    .textbox{
+        width:90%;
+        margin-top: 30px;
+    }
+    .textbox .heading2{
+        font-size: 38px;
+        color:black;
+        width:50%;
+    }
+    .subheading2{
+        font-size: 18px;
+        color:grey;
+        line-height: 30px;
+        margin:30px 0;
+    }
+    
+    .review{
+        height:120vh;
+    }
+    .heading3{
+        padding:50px 100px;
+        width:100%;
+        font-size: 35px;
+    }
+    .container3{
+        flex-direction:column;
+        gap:50px;
+    }
+    .name{
+        font-size: 22px;
+    }
+    .title{
+        font-size: 18px;
+        color:grey;
+    }
+    .remark{
+        font-size: 15px;
+        color:grey;
+        margin-top: 20px;
+    }
+    .box{
+        width:320px;
+        height:220px;
+        border-radius:10px;
+        padding:20px;
+        background-color: white;
+    }
+    .transaction2{
+        height: 140vh;
+        width:100%;
+    }
+    .container4{
+        padding:50px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .transaction2 .heading4{
+        width:100%;
+    }
+
+    .customers{
+        height:180vh;
+        position:relative;
+
+    }
+    
+    .subheading-1{
+        font-size: 18px;
+        color:grey;
+        text-align: center;
+    }
+    .container6{
+    flex-direction:column;
+    }
+    .custcard{
+        height: 300px;
+        width:250px;
+        background-color: white;
+        border-radius:10px;
+        text-align: center;
+        padding:60px 20px;
+    }
+    .numbers{
+        color:#F7B030;
+        font-size: 35px;
+    }
+    .person{
+        font-size: 22px;
+    }
+    .custcard .about{
+        font-size: 18px;
+        color:grey;
+        margin-top:20px;
+        font-weight: 500;
+    }
+    .custcard2{
+        height:350px;
+        width:270px;
+        background-color: #F7B030;
+        color:white;
+    }
+    .custcard2 .about{
+        color:white;
+    }
+
+    .container3{
+        flex-direction:column;
+    }
+
+    .footer{
+        height:100vh;
+        position:relative;
+    }
+    .container7{
+        position:absolute;
+        top:15%;
+    left:5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    .about{
+        margin-bottom:30px;
+    }
+    .foot-heading{
+        font-size: 25px;
+        margin-bottom: 20px;
+        color:black;
+    }
+    .foot-list{
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+
+    }
+    .looking{
+        width:100%;
+    }
+    .social{
+        display: flex;
+        gap:10px;
+    
+    }
+    .icons{
+        height:30px;
+        cursor: pointer;
+    }
+    .foot-info{
+        margin-bottom:20px;
+        font-size: 18px;
+    }
+}
